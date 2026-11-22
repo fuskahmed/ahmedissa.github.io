@@ -50,17 +50,5 @@ section{padding:65px 0;border-top:1px solid var(--line)}.section-head{display:fl
 <section id="contact"><div class="section-head"><h2>Let’s Connect</h2><p>Open to engineering opportunities and collaboration</p></div><div class="contact"><a href="mailto:ahmed.yasser97978@outlook.com">Email me</a><a href="tel:+4915227996195">Call</a><a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a></div></section>
 <footer>© <span id="year"></span> Ahmed Issa · Built to evolve with every project.</footer>
 </div>
-<div id="editbar"><button id="editbtn" onclick="toggleEdit()">✎ Edit website</button><button class="secondary" onclick="exportData()">Export backup</button><button class="secondary" onclick="resetSite()">Reset</button></div>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-let editing=false;
-function toggleEdit(){editing=!editing;document.body.classList.toggle('editing',editing);document.querySelectorAll('[data-edit]').forEach(el=>{el.contentEditable=editing;el.spellcheck=editing});document.getElementById('editbtn').textContent=editing?'✓ Finish editing':'✎ Edit website';document.querySelectorAll('.add').forEach(x=>x.style.display=editing?'inline-block':'none');if(!editing)save();}
-function save(){let d={};document.querySelectorAll('[data-edit]').forEach((el,i)=>d[i]=el.innerHTML);localStorage.setItem('ahmedPortfolioEdits',JSON.stringify(d));}
-document.addEventListener('input',e=>{if(editing&&e.target.matches('[data-edit]'))save()});
-function load(){try{let d=JSON.parse(localStorage.getItem('ahmedPortfolioEdits')||'{}');document.querySelectorAll('[data-edit]').forEach((el,i)=>{if(d[i]!==undefined)el.innerHTML=d[i]})}catch(e){}}
-function addProject(){if(!editing)return;let card=document.createElement('div');card.className='card project';card.innerHTML='<div class=\"meta\" data-edit>New project date</div><h3 data-edit>New project title</h3><p data-edit>Describe the project, your contribution and the result.</p><div class=\"details\"><span class=\"tag\">Add tools</span></div>';document.getElementById('projectgrid').appendChild(card);card.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable='true');save();}
-function exportData(){let d=localStorage.getItem('ahmedPortfolioEdits')||'{}';let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([d],{type:'application/json'}));a.download='portfolio-backup.json';a.click();}
-function resetSite(){if(confirm('Reset saved website edits to the original content?')){localStorage.removeItem('ahmedPortfolioEdits');location.reload();}}
-load();
-</script>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body></html>
