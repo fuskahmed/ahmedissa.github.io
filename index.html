@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ahmed Issa | Mechatronics Engineer</title>
+<style>
+:root{--bg:#08111f;--panel:#101d30;--text:#eaf1ff;--muted:#a4b4ca;--accent:#58d5c9;--line:#23334b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#15304b 0,transparent 40%),var(--bg);color:var(--text);font:16px/1.65 Inter,Segoe UI,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:20px}nav .brand{font-weight:800;letter-spacing:.5px}nav .links{display:flex;gap:22px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px}
+.hero{min-height:76vh;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:48px;padding:70px 0}.eyebrow{color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-size:13px;font-weight:700}
+h1{font-size:clamp(42px,6vw,74px);line-height:1.08;margin:12px 0 18px;letter-spacing:-2px}h1 span{color:var(--accent)}.intro{color:var(--muted);font-size:19px;max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;border:1px solid var(--accent);border-radius:12px;padding:12px 18px;color:var(--text);font-weight:700}.btn.primary{background:var(--accent);color:#071320}.portrait{width:min(300px,100%);aspect-ratio:1;border-radius:26px;object-fit:cover;border:1px solid #3e5977;box-shadow:0 25px 80px #0006;justify-self:center}
+section{padding:65px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.section-head h2{font-size:32px;margin:0}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#12223a,#0c1728);border:1px solid var(--line);border-radius:18px;padding:23px}.card h3{margin:0 0 8px}.card p{color:var(--muted)}.tag{display:inline-block;background:#183148;color:var(--accent);padding:4px 9px;border-radius:99px;font-size:12px;margin:5px 4px 0 0}.project{display:flex;flex-direction:column;min-height:270px}.project .meta{color:var(--accent);font-size:13px}.project .details{margin-top:auto}.skillgroup h3{color:var(--accent)}.timeline{border-left:2px solid var(--accent);padding-left:24px;margin-left:8px}.item{position:relative;margin:0 0 28px}.item:before{content:"";position:absolute;left:-32px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}.item .date{color:var(--accent);font-size:13px}.item h3{margin:3px 0}.item p{color:var(--muted);margin:6px 0}.contact{display:flex;flex-wrap:wrap;gap:12px}.contact a,.contact span{border:1px solid var(--line);border-radius:12px;padding:12px 16px;background:#0e1b2c}footer{padding:35px 0;color:var(--muted);text-align:center}
+#editbar{position:fixed;bottom:16px;right:16px;z-index:20;background:#15263b;border:1px solid #34516e;border-radius:14px;padding:12px;display:flex;gap:10px;box-shadow:0 10px 30px #0008}#editbar button{cursor:pointer;border:0;border-radius:9px;padding:10px 13px;font-weight:700;background:var(--accent);color:#071320}#editbar button.secondary{background:#243a53;color:#fff}.editing [data-edit]{outline:1px dashed #58d5c9;outline-offset:3px;cursor:text}.editing [data-edit]:focus{outline:2px solid var(--accent)}.editing .add{display:inline-block}.add{display:none;background:#17344a;color:var(--accent);border:1px dashed var(--accent);padding:10px;border-radius:10px;cursor:pointer;margin-top:12px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.intro{margin:auto}.buttons{justify-content:center}.grid{grid-template-columns:1fr 1fr}.section-head{display:block}.portrait{width:240px}}
+@media(max-width:550px){.grid{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="brand">AHMED ISSA <span style="color:var(--accent)">/ PORTFOLIO</span></div><div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+<div><div class="eyebrow" data-edit>Mechatronics · Mechanical Design · Automation</div><h1 data-edit>Ahmed <span>Issa</span></h1><p class="intro" data-edit>Master’s student in Mechatronics and Cyber-Physical Systems. Interested in mechanical design, machine development and industrial automation—turning ideas into practical engineering solutions.</p><div class="buttons"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn" href="Ahmed_Issa_CV.pdf" download>Download CV</a></div></div>
+<img class="portrait" src="profile.png" alt="Ahmed Issa profile photo">
+</header>
+<section id="projects"><div class="section-head"><h2>Selected Projects</h2><p>Design, integration and problem solving</p></div><div class="grid" id="projectgrid">
+<div class="card project"><div class="meta" data-edit>Feb 2025 – Jun 2025</div><h3 data-edit>Automated Road Line Marker</h3><p data-edit>Mechanical design and 3D modelling of an automated road-marking system concept. Integrated mechanical and electrical components and contributed to computer vision concepts for obstacle and traffic-sign detection.</p><div class="details"><span class="tag">SolidWorks</span><span class="tag">Mechanical Design</span><span class="tag">Computer Vision</span></div></div>
+<div class="card project"><div class="meta" data-edit>Oct 2024 – Feb 2025</div><h3 data-edit>AI-Assisted Forklift Design</h3><p data-edit>Designed and modelled the forklift, performed hydraulic calculations and material selection, and explored computer vision for autonomous navigation and remote operation.</p><div class="details"><span class="tag">SolidWorks</span><span class="tag">Hydraulics</span><span class="tag">AI Concepts</span></div></div>
+<div class="card project"><div class="meta" data-edit>Feb 2023 – Jun 2023</div><h3 data-edit>Smart Home</h3><p data-edit>System design and CAD modelling for lighting, appliance and security automation. Integrated temperature, humidity and motion sensors and explored AI-based monitoring features.</p><div class="details"><span class="tag">CAD</span><span class="tag">Sensors</span><span class="tag">Automation</span></div></div>
+</div><button class="add" onclick="addProject()">＋ Add project</button></section>
+<section id="skills"><div class="section-head"><h2>Technical Skills</h2><p>Tools and technologies</p></div><div class="grid">
+<div class="card skillgroup"><h3>CAD & Mechanical Design</h3><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span><span class="tag">Inventor</span><span class="tag">CAD Design</span></div>
+<div class="card skillgroup"><h3>Automation & Control</h3><span class="tag">PLC</span><span class="tag">Siemens S7-1200</span><span class="tag">Classic Control</span><span class="tag">Motor Drives</span><span class="tag">Instrumentation</span></div>
+<div class="card skillgroup"><h3>Robotics & Programming</h3><span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">Computer Vision</span><span class="tag">C</span><span class="tag">Arduino</span></div>
+<div class="card skillgroup"><h3>Simulation & Data</h3><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Excel</span></div>
+<div class="card skillgroup"><h3>Engineering</h3><span class="tag">Sensors</span><span class="tag">Motor Systems</span><span class="tag">System Integration</span></div>
+<div class="card skillgroup"><h3>Soft Skills</h3><span class="tag">Teamwork</span><span class="tag">Communication</span><span class="tag">Research</span><span class="tag">Time Management</span></div>
+</div></section>
+<section id="experience"><div class="section-head"><h2>Experience & Training</h2><p>Hands-on exposure to industrial systems</p></div><div class="timeline">
+<div class="item"><div class="date" data-edit>Oct 2025 – Jan 2026</div><h3 data-edit>Basic Control – Classic Control & PLC Programming</h3><p data-edit>Siemens S7-1200 programming, classic control circuits, troubleshooting, motor-drive configuration and industrial control-panel assembly.</p></div>
+<div class="item"><div class="date" data-edit>Sep 2024</div><h3 data-edit>SLB – Schlumberger</h3><p data-edit>Pump maintenance and troubleshooting exposure: ESP, PCP and sucker-rod pumps; cables and DC motors used in pumping systems.</p></div>
+<div class="item"><div class="date" data-edit>Jul – Aug 2024</div><h3 data-edit>Delta Fertilizers and Chemical Industries Company</h3><p data-edit>Industrial equipment including pumps, compressors and heat exchangers; control panels, instrumentation, maintenance and fault diagnosis.</p></div>
+<div class="item"><div class="date" data-edit>Aug 2023</div><h3 data-edit>GUPCO – Gulf of Suez Petroleum</h3><p data-edit>Training in pumps, turbines, power generation, sensors, instrumentation, AC/DC motors and automation/PLC applications.</p></div>
+<div class="item"><div class="date" data-edit>Jul 2022</div><h3 data-edit>Faculty of Engineering – Mansoura University</h3><p data-edit>Practical training in PLC, control systems, sensors, electrical machines, hydraulics and maintenance.</p></div>
+</div></section>
+<section id="education"><div class="section-head"><h2>Education</h2><p>Academic foundation</p></div><div class="timeline">
+<div class="item"><div class="date" data-edit>Mar 2026 – Present</div><h3 data-edit>M.Eng. Mechatronics and Cyber-Physical Systems</h3><p data-edit>Deggendorf Institute of Technology (THD) · Germany</p></div>
+<div class="item"><div class="date" data-edit>Oct 2020 – Jun 2025</div><h3 data-edit>Bachelor of Engineering</h3><p data-edit>Mansoura University · Egypt</p></div>
+</div></section>
+<section id="about"><div class="section-head"><h2>About</h2></div><div class="card"><p data-edit>I’m a mechatronics engineer and master’s student with an interest in mechanical design, machine development and industrial automation. I enjoy combining CAD, controls and systems thinking to develop practical engineering concepts.</p><p><b>Languages:</b> <span data-edit>Arabic (native) · English (B2) · German (A2)</span></p></div></section>
+<section id="contact"><div class="section-head"><h2>Let’s Connect</h2><p>Open to engineering opportunities and collaboration</p></div><div class="contact"><a href="mailto:ahmed.yasser97978@outlook.com">Email me</a><a href="tel:+4915227996195">Call</a><a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a></div></section>
+<footer>© <span id="year"></span> Ahmed Issa · Built to evolve with every project.</footer>
+</div>
+<div id="editbar"><button id="editbtn" onclick="toggleEdit()">✎ Edit website</button><button class="secondary" onclick="exportData()">Export backup</button><button class="secondary" onclick="resetSite()">Reset</button></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+let editing=false;
+function toggleEdit(){editing=!editing;document.body.classList.toggle('editing',editing);document.querySelectorAll('[data-edit]').forEach(el=>{el.contentEditable=editing;el.spellcheck=editing});document.getElementById('editbtn').textContent=editing?'✓ Finish editing':'✎ Edit website';document.querySelectorAll('.add').forEach(x=>x.style.display=editing?'inline-block':'none');if(!editing)save();}
+function save(){let d={};document.querySelectorAll('[data-edit]').forEach((el,i)=>d[i]=el.innerHTML);localStorage.setItem('ahmedPortfolioEdits',JSON.stringify(d));}
+document.addEventListener('input',e=>{if(editing&&e.target.matches('[data-edit]'))save()});
+function load(){try{let d=JSON.parse(localStorage.getItem('ahmedPortfolioEdits')||'{}');document.querySelectorAll('[data-edit]').forEach((el,i)=>{if(d[i]!==undefined)el.innerHTML=d[i]})}catch(e){}}
+function addProject(){if(!editing)return;let card=document.createElement('div');card.className='card project';card.innerHTML='<div class=\"meta\" data-edit>New project date</div><h3 data-edit>New project title</h3><p data-edit>Describe the project, your contribution and the result.</p><div class=\"details\"><span class=\"tag\">Add tools</span></div>';document.getElementById('projectgrid').appendChild(card);card.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable='true');save();}
+function exportData(){let d=localStorage.getItem('ahmedPortfolioEdits')||'{}';let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([d],{type:'application/json'}));a.download='portfolio-backup.json';a.click();}
+function resetSite(){if(confirm('Reset saved website edits to the original content?')){localStorage.removeItem('ahmedPortfolioEdits');location.reload();}}
+load();
+</script>
+</body></html>
